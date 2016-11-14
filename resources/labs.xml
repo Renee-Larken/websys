@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lab>
+	<title>Lab 1</title>
+	<link></link>
+	<description>Some PHP Info - setting up the server.</description>
+</lab>
+<lab>
+	<title>Lab 2</title>
+	<link></link>
+	<description>A music playlist with XML.</description>
+</lab>
+<lab>
+	<title>Lab 3</title>
+	<link></link>
+	<description>Iterating through the DOM using JavaScript.</description>
+</lab>
+<lab>
+	<title>Lab 4</title>
+	<link></link>
+	<description>Redoing the playlist with some jQuery and AJAX.</description>
+</lab>

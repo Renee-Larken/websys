@@ -1,0 +1,21 @@
+===Database websyslab8
+==File contains number of rows (students) in students table.
+
+== Table structure for table students
+
+|------
+|Column|Type|Null|Default
+|------
+|//**rin**//|int(9)|No|
+|rcsID|char(7)|Yes|NULL
+|first_name|varchar(100)|No|
+|last_name|varchar(100)|No|
+|alias|varchar(100)|No|
+|phone|int(10)|Yes|NULL
+|street|varchar(100)|No|
+|city|varchar(100)|No|
+|state|char(2)|No|
+|zip|int(5)|No|
+== Dumping data for table students
+
+|10

@@ -1,0 +1,131 @@
+body {
+	background-color: #fffff3;
+	background-image: url(./fallingleaves.gif);
+}
+
+a#nothingHere {
+    color: #ef89ab;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Comfortaa, cursive;
+    padding: 25px;
+    display: block;
+}
+
+a#nothingHere {
+    text-decoration: none;
+    color: inherit;
+}
+
+a#nothingHere:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#nothingHere img {
+    float: left;
+}
+
+#djBox {
+    width: 932px;
+    color: #ef89ab;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 25px;
+    margin-top: -180px;
+    margin-left: -466px;
+    overflow: hidden;
+    border: 3px solid #ffc6d9;
+	-webkit-box-shadow: 0 0 3px 3px #fbe4ec;
+	box-shadow: 0 0 3px 3px #fbe4ec;
+}
+
+#musicList h1 {
+	text-align: center;
+	font-family: Comfortaa, cursive;
+	letter-spacing: 1.5px;
+	font-weight: regular;
+}
+
+ul {
+	padding-left: 0;
+	font-size: 0;
+    border-bottom: 1px solid #a89b99;
+}
+
+ul li {
+	color: #83706d;
+	font-family: Raleway, cursive;
+	padding: 10px;
+    height: 120px;
+    font-size: 14px;
+    width: 290px;
+    list-style-type: none;
+    background-color: #fcf2f1;
+    display: inline-block;
+    border-top: 1px solid #a89b99;
+    border-right: 1px solid #a89b99;
+}
+
+ul li:hover {
+	background-color: #e5d0cd;
+}
+
+ul li:nth-child(3n+3) {
+	border-right: 0;
+}
+
+ul li img {
+	border-radius: 100%;
+	border: 4px solid #83706d;
+	float: left;
+	margin-right: 10px;
+	opacity: 0.6;
+}
+
+ul li p {
+	vertical-align: top;
+	margin: 0;
+	text-align: right;
+	word-wrap: break-word;
+}
+
+ul .title {
+    font-size: 1.25em !important;
+	font-weight: 600;
+	margin-top: 14px;
+    text-transform: lowercase;
+    font-family: Comfortaa, cursive;
+}
+
+.title+p {
+    font-weight: 600;
+}
+
+.title+p+p {
+    font-style: italic;
+}
+
+.title+p+p+p, .title+p+p+p+p {
+    font-size: .8em !important;
+}
+
+ul li a:hover img {
+	border-color: #ffffff;
+}
+
+#musicList span {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    font-family: Comfortaa;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: 400;
+    opacity: 0.8;
+}

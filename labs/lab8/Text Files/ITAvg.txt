@@ -1,0 +1,17 @@
+===Database websyslab8
+==File contains average grade for the second course under courses table (IT & Society).
+
+== Table structure for table courses
+
+|------
+|Column|Type|Null|Default
+|------
+|//**crn**//|int(11)|No|
+|prefix|varchar(4)|No|
+|number|smallint(4)|No|
+|title|varchar(255)|No|
+|section|int(2)|No|
+|year|int(4)|No|
+== Dumping data for table courses
+
+|87.5000

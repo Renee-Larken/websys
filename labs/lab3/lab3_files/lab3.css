@@ -1,0 +1,74 @@
+/* CSS by Tusa */
+body {
+	font-family: Comfortaa, cursive;
+	background-color: #263D42;
+	color: #263D42;
+	font-size: 1.1em;
+}
+
+pre {
+	text-transform: lowercase;
+	font-family: Comfortaa;
+	background-color: #80CED7;
+	padding: 25px;
+}
+
+h1, h2 {
+	font-family: Sniglet;
+	color: #CCDBDC;
+	background-color: #263D42;
+	padding: 10px;
+	text-align: center;
+}
+
+a {
+	font-style: italic;
+	color: #263D42;
+	font-weight: 800;
+}
+
+.quote {
+	background-color: #80CED7;
+	padding: 25px;
+}
+
+#backdrop {
+	display: none;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	height: 96%;
+	width: 98%;
+	top: 2%;
+	left: 1%;
+}
+
+#customDial {
+	position: fixed;
+	background-color: #63C7B2;
+	padding: 15px;
+	width: 340px;
+	left: calc(50% - 170px);
+	top: calc(50% - 20px);
+	left: -webkit-calc(50% - 170px);
+	top: -webkit-calc(50% - 20px);
+	left: -moz-calc(50% - 170px);
+	top: -moz-calc(50% - 20px);
+}
+
+#customDial button {
+	float: right;
+	background: none !important;
+	border: 0;
+}
+
+#customDial button:hover {
+	cursor: pointer;
+}
+
+#customDial p {
+	clear: both;
+}
+
+#customDial span {
+	display: block;
+}

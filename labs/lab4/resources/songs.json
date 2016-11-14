@@ -1,0 +1,58 @@
+{
+  "songs": [
+    {
+      "artist": "Gorillaz",
+      "album": "Demon Days",
+      "albumLink": "http://www.allmusic.com/album/demon-days-mw0000205005",
+      "albumArt": "https://upload.wikimedia.org/wikipedia/en/d/df/Gorillaz_Demon_Days.PNG",
+      "title": "Feel Good, Inc.",
+      "date": "May 24, 2005",
+      "genres": "Pop/Rock, Rap"
+    },
+    {
+      "artist": "The All-American Rej.",
+      "album": "Move Along",
+      "albumLink": "http://www.allmusic.com/album/move-along-mw0000353446",
+      "albumArt": "https://upload.wikimedia.org/wikipedia/en/5/5c/Move_Along_(The_All-American_Rejects_album_-_cover_art).jpg",
+      "title": "Dirty Little Secret",
+      "date": "July 12, 2005",
+      "genres": "Pop/Rock"
+    },
+    {
+      "artist": "Imogen Heap",
+      "album": "Sparks",
+      "albumLink": "http://www.allmusic.com/album/sparks-mw0002642784",
+      "albumArt": "https://img.discogs.com/nVQJT27DgbOjU51BdlwgY6xRrPw=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6105020-1411200157-2022.jpeg.jpg",
+      "title": "The Listening Chair",
+      "date": "August 19, 2014",
+      "genres": "Pop/Rock"
+    },
+    {
+      "artist": "My Chemical Romance",
+      "album": "Black Parade",
+      "albumLink": "http://www.allmusic.com/album/the-black-parade-mw0000563300",
+      "albumArt": "https://upload.wikimedia.org/wikipedia/en/e/ea/Blackparadecover.jpg",
+      "title": "Dead!",
+      "date": "October 31, 2006",
+      "genres": "Pop/Rock"
+    },
+    {
+      "artist": "Panic! At the Disco",
+      "album": "Vices & Virtues",
+      "albumLink": "http://www.allmusic.com/album/vices-virtues-mw0002095223",
+      "albumArt": "https://upload.wikimedia.org/wikipedia/en/e/e1/Panic!_at_the_Disco_-_Vices_%26_Virtues.jpg",
+      "title": "Sarah Smiles",
+      "date": "March 22, 2011",
+      "genres": "Pop/Rock"
+    },
+    {
+      "artist": "21 Pilots",
+      "album": "Blurryface",
+      "albumLink": "http://www.allmusic.com/album/blurryface-mw0002837924",
+      "albumArt": "http://cps-static.rovicorp.com/3/JPG_500/MI0003/853/MI0003853980.jpg?partner=allrovi.com",
+      "title": "Stressed Out",
+      "date": "May 19, 2015",
+      "genres": "Pop/Rock"
+    }
+  ]
+}

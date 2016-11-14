@@ -1,0 +1,189 @@
+/* main.css - developed by Tusa Larkowski */
+/* This is the main CSS file - which will contain styles consistently found throughout all pages of the website. */
+
+/*----------------------------------------------------------------------------------*/
+/* General Tags */
+
+*::selection {
+	background-color: #abbd9a;
+	color: #ffffff;
+}
+
+html {
+	height: 100%;
+	background: transparent;
+}
+
+body {
+	background-color: #413E4A;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+a {
+	text-decoration: none;
+	color: #A0BEBD;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-family: 'Architects Daughter', cursive;	
+}
+
+a:hover {
+	color: #4e7482;
+}
+
+p {
+	color: #f8f5e9;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-family: 'Architects Daughter', cursive;
+}
+
+hr {
+	border: 2px solid #A0BEBD;
+}
+
+/*----------------------------------------------------------------------------------*/
+/* Banner */
+
+#banner {
+	width: 1000px;
+	margin: 10px auto;
+}
+
+#welcome {
+	background-image: url(./images/bg-grass.png);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	height: 300px;
+	margin-bottom: -18px;
+}
+
+#welcome img {
+	display: inline-block;
+	margin-left: 50px;
+}
+
+#welcome #descriptor:before {
+	content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 15px;
+    bottom: auto;
+    left: -50px;
+    border-style: solid;
+    border-width: 16px 50px 16px 0;
+    border-color: transparent #4e7482;
+}
+
+#welcome #descriptor {
+	float: right;
+	position: relative;
+  	width: 450px;
+  	height: 150px;
+  	margin-top: 50px;
+  	margin-right: 80px;
+	font-size: 45px;
+	line-height: 48px;
+  	text-align: center;
+  	font-family: 'Patrick Hand', cursive;
+  	color: #413e4a;
+  	padding: 10px;
+ 	background-color: #ffffff;
+ 	border: 5px solid #4e7482;
+ 	-webkit-border-radius: 15px;
+ 	-moz-border-radius: 15px;
+ 	border-radius: 15px;
+}
+
+#welcome #descriptor:after {
+	content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+	top: 21px;
+    bottom: auto;
+    left: -41px;
+    border-style: solid;
+    border-width: 10px 41px 10px 0;
+    border-color: transparent #ffffff;
+}
+
+#welcome:after {
+	display: block;
+	content: "";
+	height: 0;
+	clear: both;
+}
+
+/*----------------------------------------------------------------------------------*/
+/* Navigation Menu */
+
+#main-menu {
+	background-color: #A0BEBD;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+ 	-moz-border-radius: 10px;
+	text-align: center;
+	height: 60px;
+	width: 100%;
+	position: relative;
+	z-index: 5;
+}
+
+#main-menu ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+#main-menu ul li {
+	display: inline-block;
+	padding-left: 30px;
+	text-align: center;
+	padding-right: 30px;
+	line-height: 60px;
+	margin-right: 25px;
+}
+
+#main-menu ul li.active {
+	background-color: #4e7482;
+}
+
+#main-menu ul li.active a {
+	color: #f8f5e9;
+}
+
+#main-menu ul li a {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 22px;
+	color: #413e4a;
+	letter-spacing: 1.5px;
+}
+
+#main-menu ul li a:hover {
+	font-weight: 600;
+}
+
+/*----------------------------------------------------------------------------------*/
+/* Everything Else? */
+
+#content {
+	width: 980px;
+	padding: 10px;
+	margin: 25px auto;
+}
+
+#content:after {
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+}
+
+#content ul {
+	list-style-image: url(./images/list-marker.png);
+}

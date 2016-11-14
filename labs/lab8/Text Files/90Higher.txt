@@ -1,0 +1,26 @@
+===Database websyslab8
+==File contains all students with a grade higher than 90 in any course.
+
+== Table structure for table students
+
+|------
+|Column|Type|Null|Default
+|------
+|//**rin**//|int(9)|No|
+|rcsID|char(7)|Yes|NULL
+|first_name|varchar(100)|No|
+|last_name|varchar(100)|No|
+|alias|varchar(100)|No|
+|phone|int(10)|Yes|NULL
+|street|varchar(100)|No|
+|city|varchar(100)|No|
+|state|char(2)|No|
+|zip|int(5)|No|
+== Dumping data for table students
+
+|Lorenzo|Corrin
+|Mary|Suevelster
+|Chorrio|Abductulla
+|Horracia|Lorkon
+|Menagash|Palendra
+|Horracia|Lorkon

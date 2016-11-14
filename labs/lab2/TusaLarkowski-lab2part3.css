@@ -1,0 +1,104 @@
+body {
+	background-color: #343838;
+	background-image: url(http://imgur.com/hqqB3am.png);
+}
+
+#djBox {
+    width: 932px;
+    color: white;
+    background-color: #005F6B;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 25px;
+    margin-top: -180px;
+    margin-left: -466px;
+    overflow: hidden;
+    border: 3px solid #00DFFC;
+	-webkit-box-shadow: 0 0 5px 5px #008C9E;
+		box-shadow: 0 0 5px 5px #008C9E;
+}
+
+#musicList h1 {
+	text-align: center;
+	font-family: Comfortaa, cursive;
+	letter-spacing: 1.5px;
+	font-weight: regular;
+}
+
+#musicEntries {
+	padding-left: 0;
+	font-size: 0;
+}
+
+#musicEntries li {
+	color: #ffffff;
+	font-family: Raleway, cursive;
+	padding: 10px;
+    height: 120px;
+    font-size: 14px;
+    width: 290px;
+    list-style-type: none;
+    background-color: #008799;
+    display: inline-block;
+    border-top: 1px solid #00DFFC;
+    border-right: 1px solid #00DFFC;
+}
+
+#musicEntries li:hover {
+	background-color: #008C9E;
+}
+
+#musicEntries li:nth-child(3n+3) {
+	border-right: 0;
+}
+
+#musicEntries li img {
+	border-radius: 100%;
+	border: 4px solid #00DFFC;
+	float: left;
+	margin-right: 10px;
+	opacity: 0.8;
+}
+
+#musicEntries li p {
+	vertical-align: top;
+	margin: 0;
+	text-align: right;
+	word-wrap: break-word;
+}
+
+#musicEntries .title {
+    font-size: 1.25em !important;
+	font-weight: 600;
+	margin-top: 14px;
+    text-transform: lowercase;
+    font-family: Comfortaa, cursive;
+}
+
+.title+p {
+    font-weight: 600;
+}
+
+.title+p+p {
+    font-style: italic;
+}
+
+.title+p+p+p, .title+p+p+p+p {
+    font-size: .8em !important;
+}
+
+ul li a:hover img {
+	border-color: #ffffff;
+}
+
+#musicList span {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    font-family: Comfortaa;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: 400;
+    opacity: 0.8;
+}

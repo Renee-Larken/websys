@@ -1,0 +1,29 @@
+===Database websyslab8
+
+== Table structure for table students
+
+|------
+|Column|Type|Null|Default
+|------
+|//**rin**//|int(9)|No|
+|rcsID|char(7)|Yes|NULL
+|first_name|varchar(100)|No|
+|last_name|varchar(100)|No|
+|alias|varchar(100)|No|
+|phone|int(10)|Yes|NULL
+|street|varchar(100)|No|
+|city|varchar(100)|No|
+|state|char(2)|No|
+|zip|int(5)|No|
+== Dumping data for table students
+
+|033654557|herral|Lucy|Herranzo|herral@rpi.edu|2025550170|1300 Glen Street|Greensburg|KT|42743
+|102074004|lorkoh|Horracia|Lorkon|lorkoh@rpi.edu|2025550170|3605 Werninger Street|Houston|TX|77032
+|123601163|abducc|Chorrio|Abductulla|abducc@rpi.edu|2025550179|3365 Wetzel Lane|Nevada|MS|64772
+|382373010|suevem|Mary|Suevelster|suevem@rpi.edu|2025550100|3007 Bell Street|New York|NY|10004
+|516540426|smithw|William|Smitherson|smithw@rpi.edu|2025550188|4784 Collins Street|Brockway|PA|15824
+|527070068|corril|Lorenzo|Corrin|corril@rpi.edu|2025550181|2715 Sarah Drive|Carlyss|LA|70663
+|591679511|cathet|Tom|Cathertiona|cathet@rpi.edu|2025550138|3669 Sherwood Circle|Lafayette|LI|70501
+|860550028|borrat|Travis|Borranger|borrat@rpi.edu|2025550158|3934 Riverwood Drive|Burney|CA|96013
+|870026810|lawlem|Marshal|Lawlenger|lawlem@rpi.edu|2025550171|1798 Hog Camp Road|Schaumburg|IL|60173
+|971439580|palenm|Menagash|Palendra|palenm@rpi.edu|2025550109|4577 Oral Lake Road|Apple Valley|MN|55124

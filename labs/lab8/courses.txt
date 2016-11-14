@@ -1,0 +1,25 @@
+===Database websyslab8
+
+== Table structure for table courses
+
+|------
+|Column|Type|Null|Default
+|------
+|//**crn**//|int(11)|No|
+|prefix|varchar(4)|No|
+|number|smallint(4)|No|
+|title|varchar(255)|No|
+|section|int(2)|No|
+|year|int(4)|No|
+== Dumping data for table courses
+
+|38132|ITWS|4500|Web Science Systems Development|1|2017
+|39066|ITWS|1220|IT and Society|2|2017
+|37915|CSCI|1200|Data Structures|9|2017
+|38201|CSCI|2200|Foundations of Computer Science|3|2017
+|37385|COMM|1600|History and Culture of Games|1|2017
+|39062|COMM|2520|Intro to Game Storytelling|2|2017
+|35098|CIVL|4080|Concrete Design|1|2017
+|38569|CIVL|4280|Design for Constructability|1|2017
+|35804|LGHT|6770|Light and Health|1|2017
+|35685|LGHT|6760|Lighting Workshop|1|2017

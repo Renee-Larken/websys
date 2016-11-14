@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="./TusaLarkowskilab2part4.css"?>
+<favSongs xmlns:html="http://www.w3.org/1999/xhtml">
+	<song>
+		<album>
+			<image><html:img width="115" height="115" src="https://upload.wikimedia.org/wikipedia/en/d/df/Gorillaz_Demon_Days.PNG"/></image>
+			<alTitle>Demon Days</alTitle>
+			<link><html:a href="http://www.allmusic.com/album/demon-days-mw0000205005"><title>Feel Good, Inc.</title></html:a></link>
+		</album>
+		<artist>Gorillaz</artist>
+		<release>May 24, 2005</release>
+		<genres>
+			<genre>Pop/Rock</genre>
+			<genre>Rap</genre>
+		</genres>
+	</song>
+
+	<song>
+		<album>
+			<image><html:img width="115" height="115" src="https://upload.wikimedia.org/wikipedia/en/5/5c/Move_Along_(The_All-American_Rejects_album_-_cover_art).jpg"/></image>
+			<link><html:a href="http://www.allmusic.com/album/move-along-mw0000353446"><alTitle>Move Along</alTitle></html:a></link>
+		</album>
+		<title>Dirty Little Secret</title>
+		<artist>The All-American Rejects</artist>
+		<release>July 12, 2005</release>
+		<genres>
+			<genre>Pop/Rock</genre>
+		</genres>
+	</song>
+
+	<song>
+		<album>
+			<image><html:img width="115" height="115" src="https://img.discogs.com/nVQJT27DgbOjU51BdlwgY6xRrPw=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6105020-1411200157-2022.jpeg.jpg"/></image>
+			<link><html:a href="http://www.allmusic.com/album/sparks-mw0002642784"><alTitle>Sparks</alTitle></html:a></link>
+		</album>
+		<title>The Listening Chair</title>
+		<artist>Imogen Heap</artist>
+		<release>August 19, 2014</release>
+		<genres>
+			<genre>Pop/Rock</genre>
+		</genres>
+	</song>
+
+	<song>
+		<album>
+			<image><html:img width="115" height="115" src="https://upload.wikimedia.org/wikipedia/en/e/ea/Blackparadecover.jpg"/></image>
+			<link><html:a href="http://www.allmusic.com/album/the-black-parade-mw0000563300"><alTitle>Black Parade</alTitle></html:a></link>
+		</album>
+		<title>Dead!</title>
+		<artist>My Chemical Romance</artist>
+		<release>October 31, 2006</release>
+		<genres>
+			<genre>Pop/Rock</genre>
+		</genres>
+	</song>
+
+	<song>
+		<album>
+			<image><html:img width="115" height="115" src="https://upload.wikimedia.org/wikipedia/en/e/e1/Panic!_at_the_Disco_-_Vices_%26_Virtues.jpg"/></image>
+			<link><html:a href="http://www.allmusic.com/album/vices-virtues-mw0002095223"><alTitle>Vices and Virtues</alTitle></html:a></link>
+		</album>
+		<title>Sarah Smiles</title>
+		<artist>Panic! At the Disco</artist>
+		<release>March 22, 2011</release>
+		<genres>
+			<genre>Pop/Rock</genre>
+		</genres>
+	</song>
+
+	<song>
+		<album>
+			<image><html:img width="115" height="115" src="http://cps-static.rovicorp.com/3/JPG_500/MI0003/853/MI0003853980.jpg?partner=allrovi.com"/></image>
+			<link><html:a href="http://www.allmusic.com/album/blurryface-mw0002837924"><alTitle>Blurryface</alTitle></html:a></link>
+		</album>
+		<title>Stressed Out</title>
+		<artist>21 Pilots</artist>
+		<release>May 19, 2015</release>
+		<genres>
+			<genre>Pop/Rock</genre>
+		</genres>
+	</song>
+</favSongs>
