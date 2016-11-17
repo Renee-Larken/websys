@@ -1,53 +1,53 @@
 {
   "labs": [
     {
-      "title": "44",
-      "link": "websys.local",
-      "descr": "asdfdsf"
+      "title": "Lab 1: AMP Stack",
+      "link": "lab1",
+      "descr": "setting up an AMP stack for use (WAMP) and ensuring smooth run"
     },
     {
-      "title": "",
-      "link": "",
-      "descr": ""
+      "title": "Lab 2: HTML and XML",
+      "link": "lab2",
+      "descr": "creating a playlist with some structural languages and styling them up"
     },
     {
-      "title": "",
-      "link": "",
-      "descr": ""
+      "title": "Lab 3: JavaScript and the DOM",
+      "link": "lab3",
+      "descr": "iterate through the DOM and perform different events given a users actions"
     },
     {
-      "title": "",
-      "link": "",
-      "descr": ""
+      "title": "Lab 4: AJAX/JSON",
+      "link": "lab4",
+      "descr": "revamp of lab 2, using the helpful existence of AJAX and JSON"
     },
     {
-      "title": "",
-      "link": "",
-      "descr": ""
+      "title": "Lab 5: Front-End Optimization",
+      "link": "lab5",
+      "descr": "optimizing the run-time of your front-end operations using various means"
     },
     {
-      "title": "",
-      "link": "",
-      "descr": ""
+      "title": "Lab 6: PHP, OOP, and Input Handling",
+      "link": "lab6",
+      "descr": "a calculator for the everyday user (maybe)"
     },
     {
-      "title": "",
-      "link": "",
-      "descr": ""
+      "title": "Lab 7: Continuation of First Quiz",
+      "link": "lab7",
+      "descr": "first quiz exported to a repository on GitHub and prettied up with some Bootstrap and jQuery UI"
     },
     {
-      "title": "",
-      "link": "",
-      "descr": ""
+      "title": "Lab 8: SQL",
+      "link": "lab8",
+      "descr": "creating a database and performing all sorts of commands to export different versions of the database"
     },
     {
-      "title": "",
-      "link": "",
-      "descr": ""
+      "title": "Lab 9: PDO and Prepared Statements",
+      "link": "lab9",
+      "descr": "a revamp of the previous lab, but with the use of PDOs and prepared statements"
     },
     {
-      "title": "",
-      "link": "",
+      "title": "Lab 10:",
+      "link": "lab10",
       "descr": ""
     }
   ]

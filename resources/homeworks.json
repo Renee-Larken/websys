@@ -1,14 +1,14 @@
 {
   "homeworks": [
     {
-      "title": "44",
-      "link": "websys.local",
-      "descr": "asdfdsf"
+      "title": "HW 1: HTML, CSS, and Microformats",
+      "link": "hw1",
+      "descr": "a resume incorporating microformats and some basic structure and design know-how"
     },
     {
-      "title": "",
-      "link": "",
-      "descr": ""
+      "title": "HW 2: JavaScript, jQuery, and jQuery Plugins",
+      "link": "hw2",
+      "descr": "group assignment creating a nice game of Guess the Hex"
     }
   ]
 }
