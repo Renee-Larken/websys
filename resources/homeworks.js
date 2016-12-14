@@ -7,12 +7,12 @@ $(document).ready(function() {
     url: "../resources/homeworks.json",
     dataType: "json",
     success: function(responseData, status) {
-      var output = '<p>Hint Number Dos: click on a homework link to see my solution to it.</p><br /><hr /><ul>';
+      var output = '<ul>';
       $.each(responseData.homeworks, function(i, hw) {
           output += '<li><a href="' + hw.link + '">' + hw.title + '</a>';
           output += '<p>' + hw.descr + '</p></li>';
       });
-      output += '</ul><hr />';
+      output += '</ul>';
       $("#content").html(output);}, 
     error: function(msg) {
       alert("There was a problem: " + msg.status + " " + msg.statusText);

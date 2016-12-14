@@ -9,6 +9,7 @@
 ========================================================
 	Resources
 ========================================================
-* http://darsa.in/sly/
-* http://www.gsgd.co.uk/sandbox/jquery/easing/
 * https://cdnjs.com/libraries/normalize
+* https://tympanus.net/codrops/2013/04/25/simple-youtube-menu-effect/
+* https://icomoon.io/
+* 

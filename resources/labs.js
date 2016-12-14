@@ -7,12 +7,12 @@ $(document).ready(function() {
     url: "../resources/labs.json",
     dataType: "json",
     success: function(responseData, status) {
-      var output = '<p>Hint Numero One: click on a lab link if you want to see my solution to it.</p><br /><hr /><ul>';
+      var output = '<ul>';
       $.each(responseData.labs, function(i, lab) {
           output += '<li><a href="' + lab.link + '">' + lab.title + '</a>';
           output += '<p>' + lab.descr + '</p></li>';
       });
-      output += '</ul><hr />';
+      output += '</ul>';
       $("#content").html(output);}, 
     error: function(msg) {
       alert("There was a problem: " + msg.status + " " + msg.statusText);

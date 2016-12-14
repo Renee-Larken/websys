@@ -33,7 +33,7 @@
     {
       "title": "Lab 7: Continuation of First Quiz",
       "link": "lab7",
-      "descr": "first quiz exported to a repository on GitHub and prettied up with some Bootstrap and jQuery UI"
+      "descr": "first quiz exported to a repository on GitHub and prettied up with some external libraries and SCSS"
     },
     {
       "title": "Lab 8: SQL",
