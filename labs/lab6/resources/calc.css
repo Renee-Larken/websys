@@ -1,0 +1,116 @@
+/*CSS by Tusa Larkowski*/
+body {
+	background: #E8ECE4 url(./bg.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	font-family: 'Work Sans', sans-serif;
+}
+
+header::before, header::after, main::before {
+	clear: both;
+	content: "";
+	display: table;
+	margin-top: -1px;
+	height: 0;
+}
+
+header {
+	text-align: center;
+	width: 500px;
+	padding: 10px;
+	color: #5e3e3f;
+	letter-spacing: 2px;
+	font-weight: bold;
+	margin: 15px auto 0 auto;
+}
+
+header p {
+	background: #F5F7F3;
+	margin: 0;
+	box-shadow: 0px 0px 8px 5px #3E7C74;
+}
+
+header h2 {
+	background: #F5F7F3;
+	box-shadow: 0px 0px 8px 5px #3E7C74;
+}
+
+main {
+	width: 500px;
+	padding: 20px 20px;
+	margin: 20px auto;
+	background: #A9C7BF;
+	box-shadow: 0px 0px 15px 5px #5e3e3f;
+}
+
+pre {
+	font-family: 'Work Sans', sans-serif;
+	background: #e9f5dd;
+	color: #5e3e3f;
+	border: 1px solid #314D46;
+	margin: 0;
+	padding: 10px;
+	min-height: 50px;
+	margin-bottom: 20px;
+	white-space: nowrap;
+}
+
+pre span {
+	display: block;
+	margin-top: 10px;
+}
+
+pre span:first-child {
+	margin-top: 0;
+}
+
+input {
+	font-family: 'Work Sans', sans-serif;
+}
+
+input::-webkit-input-placeholder {
+	color: #5e3e3f !important;
+	font-size: 14px !important;
+	line-height: 60px !important;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+	opacity: 0.75 !important;
+}
+
+input[type="text"] {
+	width: calc(50% - 5px);
+	height: 150px;
+	text-align: center;
+	font-size: 60px;
+	background: #F5F7F3;
+	border: 1px solid gray;
+}
+
+input[type="submit"] {
+	width: 500px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #4DA29B;
+	color: #F5F7F3;
+	cursor: pointer;
+	border: 0;
+	border-bottom: 1px solid #314D46;
+	border-right: 1px solid #314D46;
+	border-left: 1px solid #314D46;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+input[name="add"] {
+	margin-top: 20px;
+	border-top: 1px solid #314D46;
+}
+
+input[type="submit"]:hover {
+	background: #e9f5dd;
+	color: #5e3e3f;
+}
+
+input:focus {
+	outline: 0;
+}

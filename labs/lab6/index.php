@@ -2,8 +2,7 @@
   abstract class Operation {
     protected $operand_1;
     protected $operand_2;
-    // I changed the function around so it has default values here, this way some of my other functions will still work with only one input value from the user.
-    public function __construct($o1 = 0, $o2 = 0) {
+    public function __construct($o1, $o2) {
       // Make sure we're working with numbers...
       if (!is_numeric($o1) || !is_numeric($o2)) {
         throw new Exception('Non-numeric operand.');
@@ -21,7 +20,7 @@
       return $this->operand_1 + $this->operand_2;
     }
     public function getEquation() {
-      return $this->operand_1 . ' + ' . $this->operand_2 . ' = ' . $this->operate();
+      return "<span>" . $this->operand_1 . ' + ' . $this->operand_2 . ' = ' . $this->operate() . "</span>";
     }
   }
 
@@ -32,7 +31,7 @@
       return $this->operand_1 - $this->operand_2;
     }
     public function getEquation() {
-      return $this->operand_1 . ' - ' . $this->operand_2 . ' = ' . $this->operate();
+      return "<span>" . $this->operand_1 . ' - ' . $this->operand_2 . ' = ' . $this->operate() . "</span>";
     }
   }
 
@@ -41,7 +40,7 @@
       return $this->operand_1 * $this->operand_2;
     }
     public function getEquation() {
-      return $this->operand_1 . ' x ' . $this->operand_2 . ' = ' . $this->operate();
+      return "<span>" . $this->operand_1 . ' x ' . $this->operand_2 . ' = ' . $this->operate() . "</span>";
     }
   }
 
@@ -50,42 +49,42 @@
       return $this->operand_1 / $this->operand_2;
     }
     public function getEquation() {
-      return $this->operand_1 . ' / ' . $this->operand_2 . ' = ' . $this->operate();
+      return "<span>" . $this->operand_1 . ' / ' . $this->operand_2 . ' = ' . $this->operate() . "</span>";
     }
   }
-
+  
+  // I chose to create 2-length arrays for these last two to keep from adding too much additional code to suit the original coding outlines. 
   class Cube extends Operation {
     public function operate() {
-      return $this->operand_1 ** 3;
+      $array = [0 => $this->operand_1 ** 3, 1 => $this->operand_2 **3,];
+      return $array;
     }
     public function getEquation() {
-      return $this->operand_1 . ' ^3 = ' . $this->operate();
+      return "<span>" . $this->operand_1 . '^3 = ' . $this->operate()[0] . "</span>\n<span>" . $this->operand_2 . '^3 = ' . $this->operate()[1] . "</span>";
     }
   }
   
   // Recursion code used here for convenience.
   class Factorial extends Operation {
-    public function operate($num) {
-      // Function will run for both inputs (whether they're the defaults or user-specified).
-      return $num;
+    public function operate() {
+      $array = [0 => $this->factor($this->operand_1), 1 => $this->factor($this->operand_2)];
+      return $array;
+    }
+    private function factor($num) {
+      if ($num < 2) {
+        return 1;
+      }
+      else {
+        return $num * $this->factor($num - 1);
+      }
     }
     public function getEquation() {
-      return $this->operand_1 . '! = ' . $this->operate($this->operand_1) . '\n' . $this->operand_2 . '! = ' . $this->operate($this->operand_2);
+      return "<span>" . $this->operand_1 . '! = ' . $this->operate()[0] . "</span>\n<span>" . $this->operand_2 . '! = ' . $this->operate()[1] . "</span>";
     }
   }
 
 
 // End Part 1
-
-
-
-
-// Some debugs - un comment them to see what is happening...
-// echo '$_POST print_r=>',print_r($_POST);
-// echo "<br>",'$_POST vardump=>',var_dump($_POST);
-// echo '<br/>$_POST is ', (isset($_POST) ? 'set' : 'NOT set'), "<br/>";
-// echo "<br/>---";
-
 
 
 
@@ -108,15 +107,25 @@
 // Then tell me if there is a way to do this without the ifs
 
   try {
-    if (isset($_POST['add']) && $_POST['add'] == 'Add') {
+    if (isset($_POST['add']) && $_POST['add'] == 'Add \'Em Up') {
       $op = new Addition($o1, $o2);
     }
-// Put the code for Part 2 here  \/
-
-
-
-
-
+// using so many if and else if statements is frowned upon, but I want the code to stop checking for cases as soon as it hits a correct choice.
+    else if (isset($_POST['sub']) && $_POST['sub'] == 'Subtract') {
+      $op = new Subtraction($o1, $o2);
+    }
+    else if (isset($_POST['mult']) && $_POST['mult'] == 'Multiply') {
+      $op = new Multiplication($o1, $o2);
+    }
+    else if (isset($_POST['div']) && $_POST['div'] == 'Just Divide') {
+      $op = new Division($o1, $o2);
+    }
+    else if (isset($_POST['cube']) && $_POST['cube'] == 'Cube \'Em') {
+      $op = new Cube($o1, $o2);
+    }
+    else if (isset($_POST['fact']) && $_POST['fact'] == 'Factorial') {
+      $op = new Factorial($o1, $o2);
+    }
 // End of Part 2   /\
 
   }
@@ -125,38 +134,49 @@
   }
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<title>A Lark's Calculator</title>
-</head>
-<body>
-  <pre id="result">
-  <?php 
-    if (isset($op)) {
-      try {
-        echo $op->getEquation();
-      }
-      catch (Exception $e) { 
-        $err[] = $e->getMessage();
-      }
-    }
-      
-    foreach($err as $error) {
-        echo $error . "\n";
-    } 
-  ?>
-  </pre>
-  <form method="post" action="index.php">
-    <input type="text" name="op1" id="name" value="" />
-    <input type="text" name="op2" id="name" value="" />
-    <br/>
-    <!-- Only one of these will be set with their respective value at a time -->
-    <input type="submit" name="add" value="Add" />  
-    <input type="submit" name="sub" value="Subtract" />  
-    <input type="submit" name="mult" value="Multiply" />  
-    <input type="submit" name="div" value="Divide" />  
-  </form>
-</body>
+  <head>
+    <title>A Lark's Calculator</title>
+    <link type="text/css" rel="stylesheet" href="./resources/calc.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h2>SWEET CALCULATOR, BRO!</h2>
+      <p>Here's a little calculator to have fun with! Make sure to fill in both blanks before you submit ~ .</p>
+    </header>
+    <main>
+      <pre id="result">
+        <?php
+          if (isset($op)) {
+            try {
+              echo $op->getEquation();
+            }
+            catch (Exception $e) {
+              $err[] = $e->getMessage();
+            }
+          }
+
+          foreach($err as $error) {
+            echo $error;
+          }
+        ?>
+      </pre>
+
+      <form method="post" action="index.php">
+        <input type="text" name="op1" id="name" value="" placeholder="1st value" autocomplete="off"/>
+        <input type="text" name="op2" id="name" value="" placeholder="2nd value" autocomplete="off"/>
+        <br/>
+        <!-- Only one of these will be set with their respective value at a time -->
+        <input type="submit" name="add" value="Add 'Em Up" />  
+        <input type="submit" name="sub" value="Subtract" />  
+        <input type="submit" name="mult" value="Multiply" />  
+        <input type="submit" name="div" value="Just Divide" />  
+        <input type="submit" name="cube" value="Cube 'Em" />    
+        <input type="submit" name="fact" value="Factorial" />    
+      </form>
+    </main>
+  </body>
 </html>
 
