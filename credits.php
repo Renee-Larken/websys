@@ -6,13 +6,12 @@
 	</head>
 
 	<body>
-		<?php include './resources/includes/navbar.html'; ?>
+		<main><?php include './resources/includes/navbar.html'; ?>
 		<div id="content">
 			<p>And below we have the list of resources that went into making this page, if you wanna use them, too.</p>
-			<br />
 			<hr />
 			<ul></ul>
 			<hr />
-		</div>
+		</div></main>
 	</body>
 </html>

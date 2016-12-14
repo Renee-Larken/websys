@@ -11,15 +11,15 @@
 }
 
 .dr-menu {
-	width: 100%;
-	max-width: 400px;
-	min-width: 300px;
+	width: 275px;
 	position: relative;
+	float: left;
 	font-size: 1.3em;
 	line-height: 2.5;
 	font-weight: 400;
 	color: #fff;
 	padding-top: 2em;
+	height: 100%;
 }
 
 .dr-menu > div  {
@@ -27,10 +27,6 @@
 	position: absolute;
 	width: 100%;
 	z-index: 100;
-}
-
-.dr-icon-menu:before {
-    content: "\e9bd";
 }
 
 .dr-menu > div .dr-icon {
@@ -166,6 +162,10 @@
 
 .dr-menu ul .dr-icon:before {
 	margin-right: 15px;
+}
+
+.dr-icon-menu:before {
+    content: "\e9bd";
 }
 
 .dr-icon-home:before {

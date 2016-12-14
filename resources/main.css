@@ -1,4 +1,22 @@
 body {
   background: brown; }
 
+main {
+  width: 60%;
+  padding: 25px;
+  margin: 10px auto;
+  background: blue; }
+  main:after {
+    content: "";
+    height: 0;
+    display: block;
+    clear: both; }
+
+#content {
+  float: right;
+  padding-left: 15px;
+  min-height: 300px;
+  border-left: 2px solid black;
+  width: calc(100% - 317px); }
+
 /*# sourceMappingURL=main.css.map */

@@ -8,7 +8,7 @@
 	</head>
 
 	<body>
-		<?php include '../resources/includes/navbar.html'; ?>
-		<div id="content"></div>
+		<main><?php include '../resources/includes/navbar.html'; ?>
+		<div id="content"></div></main>
 	</body>
 </html>
