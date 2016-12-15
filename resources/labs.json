@@ -46,9 +46,9 @@
       "descr": "a revamp of the previous lab, but with the use of PDOs and prepared statements"
     },
     {
-      "title": "Lab 10:",
+      "title": "Lab 10: PHP and Postgres",
       "link": "lab10",
-      "descr": "ll"
+      "descr": "creating a revamped database via PHP Postgres API and outputting/doing stuff based on a user's choice"
     }
   ]
 }

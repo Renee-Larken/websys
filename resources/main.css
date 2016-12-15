@@ -1,5 +1,5 @@
 body {
-  background: #79a3c3;
+  background: #a2c2db;
   font-family: 'Raleway', sans-serif;
   color: #ffffff; }
   body a {
@@ -11,7 +11,7 @@ main {
   width: 60%;
   padding: 25px;
   margin: 45px auto;
-  background: #79a3c3; }
+  background: #a2c2db; }
   main:after {
     content: "";
     height: 0;
