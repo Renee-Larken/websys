@@ -1,11 +1,17 @@
 body {
-  background: brown; }
+  background: #79a3c3;
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff; }
+  body a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #446986; }
 
 main {
   width: 60%;
   padding: 25px;
-  margin: 10px auto;
-  background: blue; }
+  margin: 45px auto;
+  background: #79a3c3; }
   main:after {
     content: "";
     height: 0;
@@ -14,9 +20,19 @@ main {
 
 #content {
   float: right;
-  padding-left: 15px;
+  padding: 20px 0 20px 30px;
   min-height: 300px;
-  border-left: 2px solid black;
+  border-left: 2px solid #ffffff;
   width: calc(100% - 317px); }
+  #content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    #content ul li {
+      margin-bottom: 5px; }
+    #content ul a {
+      font-weight: bold; }
+      #content ul a:hover {
+        text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,12 +1,23 @@
+$dom: #79a3c3;
+$highlight: #ffffff;
+
 body {
-	background: brown;
+	background: $dom;
+	font-family: 'Raleway', sans-serif;
+	color: $highlight;
+
+	a {
+		text-decoration: none;
+		font-size: 1.1em;
+		color: #446986;
+	}
 }
 
 main {
 	width: 60%;
 	padding: 25px;
-	margin: 10px auto;
-	background: blue;
+	margin: 45px auto;
+	background: $dom;
 
 	&:after {
 		content: "";
@@ -18,8 +29,26 @@ main {
 
 #content {
 	float: right;
-	padding-left: 15px;
+	padding: 20px 0 20px 30px;
 	min-height: 300px;
-	border-left: 2px solid black;
+	border-left: 2px solid $highlight;
 	width: calc(100% - 317px);
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			margin-bottom: 5px;
+		}
+
+		a {
+			font-weight: bold;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
 }
